@@ -18,7 +18,7 @@ contacts.each do |people, description|
   description.each do |key, value|
     if key == :favorite_icecream_flavors
       value.delete_if do |flavor|
-        
+        flavor == "strawberry"
       end
     end
   end
